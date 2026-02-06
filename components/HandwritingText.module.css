@@ -1,0 +1,26 @@
+.wrap {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .wrap {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
