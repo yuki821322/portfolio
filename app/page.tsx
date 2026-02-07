@@ -43,13 +43,18 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-amber-100 mb-8 text-center" style={{ fontFamily: "'Playfair Display', serif" }}>About Me</h2>
           <div className="grid grid-cols-2 gap-8 items-start">
             <div className="flex justify-center">
-              <Image
-                src="/MyPicture.jpg"
-                alt="プロフィール画像"
-                width={300}
-                height={300}
-                className="rounded-full object-cover w-full max-w-xs aspect-square ring-4 ring-amber-600/40 shadow-xl"
-              />
+              <div
+                className="p-3 rounded-lg shadow-xl backdrop-blur-sm"
+                style={{ background: 'rgba(68, 64, 60, 0.8)', border: '1px solid rgba(217, 119, 6, 0.4)' }}
+              >
+                <Image
+                  src="/MyPicture.jpg"
+                  alt="プロフィール画像"
+                  width={300}
+                  height={300}
+                  className="rounded-lg object-cover w-full max-w-xs aspect-square"
+                />
+              </div>
             </div>
             <div className="space-y-6 text-stone-300">
               <p>
@@ -139,8 +144,8 @@ export default function Home() {
                 <div className="mb-4">
                   <h4 className="text-sm font-semibold mb-2" style={{ color: '#a8a29e' }}>こだわったポイント</h4>
                   <p className="text-sm" style={{ color: '#78716c' }}>
-                    [こだわったポイントや苦労した点を記載]
-                  </p>
+                    [こだわったポイントや苦労した]
+                  </p>s
                 </div>
                 <div className="flex gap-4">
                   <a href="#" className="text-sm transition-colors hover:opacity-80" style={{ color: '#fef3c7' }}>GitHub</a>
